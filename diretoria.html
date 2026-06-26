@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diretoria — ANER</title>
+<meta name="description" content="Conheça a Diretoria Executiva e o Conselho da ANER — Associação Nacional das Entidades Representativas de Energias Renováveis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* ---- página diretoria ---- */
+.page-hero{padding:72px 0 56px;background:linear-gradient(180deg,var(--bg-green) 0%,var(--bg) 100%)}
+.page-hero .eyebrow{margin-bottom:16px}
+.page-hero h1{font-size:clamp(2.2rem,4vw,3.2rem);font-weight:700;max-width:18ch}
+.page-hero p{color:var(--slate);font-size:1.1rem;margin-top:18px;max-width:60ch}
+.back-link{display:flex;width:fit-content;align-items:center;gap:8px;color:var(--green-700);font-weight:600;font-size:.9rem;margin-bottom:32px;transition:.2s}
+.back-link:hover{gap:12px}
+.back-link svg{width:16px;height:16px}
+
+/* board grid */
+.board-section{padding:64px 0}
+.board-section + .board-section{padding-top:0}
+.board-label{display:flex;align-items:center;gap:14px;margin-bottom:36px}
+.board-label h2{font-size:1.55rem;font-weight:700}
+.board-label .badge{background:var(--bg-green-2);color:var(--green-700);font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:999px}
+.board-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.board-grid.conselho{grid-template-columns:repeat(4,1fr)}
+
+/* member card */
+.member-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .2s,box-shadow .25s,border-color .2s}
+.member-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--line)}
+.member-photo{aspect-ratio:1/1;background:repeating-linear-gradient(135deg,var(--bg-green) 0 14px,var(--bg-green-2) 14px 28px);display:grid;place-items:center;position:relative}
+.member-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.member-photo .ph-icon{color:var(--green-600);opacity:.45}
+.member-photo .ph-icon svg{width:48px;height:48px}
+.member-info{padding:18px 18px 20px}
+.member-role{display:inline-block;font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--green-700);background:var(--bg-green-2);padding:3px 10px;border-radius:999px;margin-bottom:10px}
+.member-info h3{font-size:1.05rem;font-weight:700;line-height:1.25;font-family:var(--ff-display)}
+.member-info p{color:var(--muted);font-size:.84rem;margin-top:6px;line-height:1.5}
+
+.divider{border:none;border-top:1px solid var(--line-soft);margin:0}
+
+@media(max-width:980px){
+  .board-grid,.board-grid.conselho{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .board-grid,.board-grid.conselho{grid-template-columns:1fr}
+  .page-hero{padding:48px 0 36px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="ANER — página inicial">
+      <img src="assets/aner-logo.png" alt="ANER" class="brand-logo">
+    </a>
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="index.html#inicio">Início</a>
+      <a href="index.html#quem-somos">Quem Somos</a>
+      <a href="index.html#associacoes">Associações</a>
+      <a href="index.html#noticias">Notícias</a>
+      <a href="index.html#contato">Contato</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-primary" href="index.html#contato">Fale conosco</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="container">
+    <a class="back-link" href="index.html#quem-somos">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Voltar para Quem Somos
+    </a>
+    <span class="eyebrow">Governança</span>
+    <h1>Diretoria Executiva e Vice-Presidências</h1>
+    <p>Conheça as lideranças que conduzem a ANER na sua missão de representar e fortalecer as entidades de energias renováveis do Brasil.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ DIRETORIA EXECUTIVA ============ -->
+<section class="board-section section" style="padding-bottom:48px">
+  <div class="container">
+    <div class="board-label">
+      <h2>Diretoria Executiva</h2>
+      <span class="badge">Gestão 2024–2026</span>
+    </div>
+    <div class="board-grid" style="grid-template-columns:repeat(2,1fr);max-width:600px">
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="assets/presidente.png" alt="Rudnei Miranda">
+        </div>
+        <div class="member-info">
+          <span class="member-role">Presidente</span>
+          <h3>Rudnei Miranda</h3>
+          <p>APERENOVÁVEIS — Pernambuco</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="assets/vice-presidente.png" alt="Helane Souza">
+        </div>
+        <div class="member-info">
+          <span class="member-role">Vice-Presidente</span>
+          <h3>Helane Souza</h3>
+          <p>AMERENOVÁVEIS — Amazonas</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ CONSELHO ============ -->
+<section class="board-section section" style="padding-top:64px">
+  <div class="container">
+    <div class="board-label">
+      <h2>Vice-Presidências</h2>
+      <span class="badge">Regiões do Brasil</span>
+    </div>
+    <div class="board-grid conselho">
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="assets/vp-norte.png" alt="Helane Souza">
+        </div>
+        <div class="member-info">
+          <span class="member-role">Vice-Presidente Norte</span>
+          <h3>Helane Souza</h3>
+          <p>AMERENOVÁVEIS — Amazonas</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <img src="assets/vp-nordeste.png" alt="Álvaro Deda">
+        </div>
+        <div class="member-info">
+          <span class="member-role">Vice-Presidente Nordeste</span>
+          <h3>Álvaro Deda</h3>
+          <p>ASER — Sergipe</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+        </div>
+        <div class="member-info">
+          <span class="member-role">Vice-Presidente Sudeste</span>
+          <h3>A definir</h3>
+          <p>Região Sudeste</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+        </div>
+        <div class="member-info">
+          <span class="member-role">Vice-Presidente Centro-Oeste</span>
+          <h3>A definir</h3>
+          <p>Região Centro-Oeste</p>
+        </div>
+      </div>
+
+      <div class="member-card">
+        <div class="member-photo">
+          <span class="ph-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+        </div>
+        <div class="member-info">
+          <span class="member-role">Vice-Presidente Sul</span>
+          <h3>A definir</h3>
+          <p>Região Sul</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="brand">
+          <img src="assets/aner-logo.png" alt="ANER" class="brand-logo footer-logo">
+        </div>
+        <p class="footer-about">Associação Nacional das Entidades Representativas de Energias Renováveis — articulando o setor por um Brasil mais sustentável.</p>
+        <div class="footer-soc">
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.2 8.2h4.6V24H.2V8.2Zm7.5 0h4.4v2.16h.06c.6-1.14 2.08-2.34 4.28-2.34 4.58 0 5.42 3 5.42 6.9V24h-4.6v-7.1c0-1.7-.03-3.88-2.36-3.88-2.36 0-2.72 1.84-2.72 3.75V24H7.7V8.2Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="none"><rect x="2.5" y="6" width="19" height="12" rx="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M10.5 9.5v5l4-2.5-4-2.5Z" fill="currentColor"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Institucional</h4>
+        <a href="index.html#quem-somos">Quem Somos</a>
+        <a href="diretoria.html">Diretoria</a>
+        <a href="index.html#associacoes">Associações</a>
+        <a href="index.html#noticias">Notícias</a>
+        <a href="index.html#contato">Contato</a>
+      </div>
+      <div class="footer-col">
+        <h4>Setores</h4>
+        <a href="#">Energia solar</a>
+        <a href="#">Energia eólica</a>
+        <a href="#">Biomassa</a>
+        <a href="#">Geração hídrica</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <a href="#">contato@aner.org.br</a>
+        <a href="#">Brasília · DF</a>
+        <a href="#">Imprensa</a>
+        <a href="#">Seja um associado</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ANER — Associação Nacional das Entidades Representativas de Energias Renováveis.</span>
+      <span><a href="#">Política de privacidade</a> · <a href="#">Termos de uso</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
